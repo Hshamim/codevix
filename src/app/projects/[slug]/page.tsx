@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps<"/projects/[slug]">
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
-  return pageMetadata({ title: project.title, description: project.summary, path: `/projects/${project.slug}` });
+  return pageMetadata({ title: `${project.title} Case Study`, description: project.summary, path: `/projects/${project.slug}` });
 }
 
 const galleryVariants: Record<CoverVariant, CoverVariant[]> = {

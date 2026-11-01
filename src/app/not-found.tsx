@@ -6,7 +6,7 @@ import { Kicker } from "@/components/ui/SectionHeading";
 import { HeroDecor } from "@/components/sections/HeroDecor";
 
 export const metadata: Metadata = {
-  title: "Page not found",
+  title: "Page Not Found",
   robots: { index: false },
 };
 

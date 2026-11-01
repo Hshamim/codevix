@@ -9,7 +9,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { SocialIcon } from "@/components/layout/SocialIcon";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact",
+  title: "Contact Us: Get a Free Project Quote",
   description: `Get a free quote from ${site.name} for your web app, SaaS, online store or AI project. We reply within 24 hours.`,
   path: "/contact",
 });

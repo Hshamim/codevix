@@ -8,7 +8,7 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { ProjectFilter } from "@/components/projects/ProjectFilter";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Work",
+  title: "Our Work: Web App & SaaS Case Studies",
   description: "Case studies of web apps, SaaS products, online stores and AI tools built with Laravel, Next.js and Vue.js.",
   path: "/projects",
 });

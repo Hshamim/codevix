@@ -13,7 +13,7 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { CounterBand } from "@/components/home/CounterBand";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About",
+  title: "About Us: Full-Stack Development Team",
   description: `Meet ${site.name}, a ${site.role.toLowerCase()} in ${site.location} building web apps, SaaS products and AI tools with Laravel, Next.js and Vue.js.`,
   path: "/about",
 });
