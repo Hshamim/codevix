@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Codevix
 
-## Getting Started
+Website for Codevix, a web and software development agency. Built with Next.js 16, Tailwind CSS v4 and Motion.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run start    # serve the production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Edit content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Almost everything lives in `src/data/site.ts`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| What | Where in `site.ts` |
+|---|---|
+| Brand, contact details, socials, website URL | `site` |
+| Home hero text, buttons, trust promises, background photos | `hero` |
+| Services (also used in the hero chips and contact form) | `services` |
+| Projects, images and the home "Work showcase" (`featured: true`) | `projects` |
+| Numbers (years, projects, clients) | `stats` |
+| FAQs, testimonials, process steps, tech stack | `faqs`, `testimonials`, `process`, `tools` |
+| Section photos and page banners | `photos` |
 
-## Learn More
+Other places:
 
-To learn more about Next.js, take a look at the following resources:
+| What | Where |
+|---|---|
+| Colors (accent red, dark and light section colors) | `src/app/globals.css`, `@theme` block |
+| Logo mark | `src/components/layout/Logo.tsx` and `src/app/icon.svg` (favicon) |
+| Social share image | `src/app/opengraph-image.tsx` |
+| Contact form budget ranges | `src/components/ui/BudgetPicker.tsx` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Photos are Unsplash placeholders. To use your own, add files to `public/` and point the entry at them, e.g. `image: "/projects/lumen.jpg"`. Remote images must be allowed in `next.config.ts` (`images.remotePatterns`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Structure
 
-## Deploy on Vercel
+```
+src/
+  app/                  pages: home, about, projects, projects/[slug], contact, 404
+  components/
+    home/               home-only sections (about, why us, showcase, FAQ...)
+    sections/           sections shared across pages (hero, page banner, services, CTA...)
+    layout/             navbar, footer, logo
+    projects/           project card, cover, filter
+    ui/                 buttons, form fields, budget picker, headings, animations
+  data/site.ts          all content
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact forms
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The forms open the visitor's email app with the message filled in, so they work with no setup.
+To send directly from the site, connect a service such as Resend or Formspree in
+`src/components/ContactForm.tsx` and `src/components/home/ContactSection.tsx`.
