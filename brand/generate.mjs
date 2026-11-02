@@ -74,7 +74,7 @@ const lockup = (s) =>
       "div",
       { style: { display: "flex", alignItems: "center", gap: 11 * s } },
       mark(38 * s),
-      h("div", { style: { display: "flex", fontSize: 30 * s, fontWeight: 800, letterSpacing: -1.1 * s, color: fg } }, "codevix", h("span", { style: { color: accent } }, ".")),
+      h("div", { style: { display: "flex", fontSize: 30 * s, fontWeight: 800, letterSpacing: -1.1 * s, color: fg } }, "codeshikor", h("span", { style: { color: accent } }, ".")),
     ),
     h("div", { style: { display: "flex", width: 1, height: 22 * s, background: "rgba(255,255,255,0.35)" } }),
     h("div", { style: { display: "flex", fontSize: 17 * s, fontWeight: 800, letterSpacing: 1.6 * s, textTransform: "uppercase", color: soft } }, copy.kicker),

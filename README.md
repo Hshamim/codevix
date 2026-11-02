@@ -1,6 +1,6 @@
-# Codevix
+# Codeshikor
 
-Website for Codevix, a web and software development agency. Built with Next.js 16, Tailwind CSS v4 and Motion.
+Website for Codeshikor, a web and software development agency. Built with Next.js 16, Tailwind CSS v4 and Motion.
 
 ## Run it
 

@@ -51,7 +51,7 @@ export default function AboutPage() {
           <Reveal className="relative pr-10 pb-16 sm:pr-24">
             <div className="relative aspect-[4/5] overflow-hidden rounded-md shadow-xl">
               {/* Replace photos.team with a photo of your team or office */}
-              <Image src={photos.team} alt="Codevix workspace" fill loading="eager" sizes="(min-width: 1024px) 34vw, 75vw" className="object-cover" />
+              <Image src={photos.team} alt="Codeshikor workspace" fill loading="eager" sizes="(min-width: 1024px) 34vw, 75vw" className="object-cover" />
             </div>
             <div className="absolute right-0 bottom-0 w-1/2 overflow-hidden rounded-md border-8 border-paper shadow-2xl">
               <div className="relative aspect-square">
@@ -71,7 +71,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted-dark">
               <p>
-                Codevix is a {site.role.toLowerCase()} based in {site.location}, with {stats[0].value} years of experience
+                Codeshikor is a {site.role.toLowerCase()} based in {site.location}, with {stats[0].value} years of experience
                 building websites, web apps and SaaS products for startups and small businesses.
               </p>
               <p>

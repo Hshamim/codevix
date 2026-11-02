@@ -6,9 +6,9 @@ const unsplash = (id: string, w = 1200) =>
 
 export const site = {
   /** Brand shown in the logo */
-  brand: "codevix",
+  brand: "codeshikor",
   /** Name used in page titles, copyright and descriptions */
-  name: "Codevix",
+  name: "Codeshikor",
   role: "Web & Software Development Agency",
   location: "Bagha, Rajshahi, Bangladesh",
   /** Structured address for search engines (country is the ISO code) */
@@ -22,7 +22,7 @@ export const site = {
   /** Live domain: used for canonical URLs, the sitemap, robots.txt and social previews */
   url: "https://alexrivera.dev",
   description:
-    "Codevix is a web development agency building websites, SaaS products and AI tools with Next.js, Vue.js and Laravel for startups and growing businesses.",
+    "Codeshikor is a web development agency building websites, SaaS products and AI tools with Next.js, Vue.js and Laravel for startups and growing businesses.",
   socials: [
     { label: "GitHub", href: "https://github.com/Hshamim" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/shamim-hosen-254697122/" },
@@ -148,13 +148,13 @@ export const tools = [
 export const testimonials = [
   {
     quote:
-      "Codevix turned a vague idea into a web app our customers genuinely love. Sign-ups doubled within the first month of launch.",
+      "Codeshikor turned a vague idea into a web app our customers genuinely love. Sign-ups doubled within the first month of launch.",
     name: "Sarah Chen",
     title: "Founder, Lumen Health",
   },
   {
     quote:
-      "A rock-solid Laravel backend and a front end that is incredibly fast. Codevix shipped in weeks what we had planned for months.",
+      "A rock-solid Laravel backend and a front end that is incredibly fast. Codeshikor shipped in weeks what we had planned for months.",
     name: "Marcus Webb",
     title: "CTO, Fieldstack",
   },

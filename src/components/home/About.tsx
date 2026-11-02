@@ -31,12 +31,12 @@ export function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <Kicker>About Codevix</Kicker>
+          <Kicker>About Codeshikor</Kicker>
           <h2 className={`mt-4 ${headingCls}`}>
             A development team building <span className="text-accent">modern web apps</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-dark">
-            Codevix is a web development agency with {stats[0].value}+ years of experience. We build front
+            Codeshikor is a web development agency with {stats[0].value}+ years of experience. We build front
             ends in Next.js and Vue.js, backends in Laravel, and use AI to plan, code and test faster.
           </p>
           <ul className="mt-8 space-y-3.5">

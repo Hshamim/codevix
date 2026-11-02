@@ -10,7 +10,7 @@ export function WhyUs() {
       <div className="container-x grid lg:grid-cols-2">
         <div className="py-20 lg:py-28 lg:pr-16">
           <Reveal>
-            <Kicker>Why choose Codevix</Kicker>
+            <Kicker>Why choose Codeshikor</Kicker>
             <h2 className={`mt-4 ${headingCls}`}>An experienced team you can rely on</h2>
           </Reveal>
 
