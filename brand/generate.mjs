@@ -20,6 +20,7 @@ const fonts = [
 const ink = "#0b0d12";
 const fg = "#f4f5f7";
 const muted = "#9aa1ae";
+const soft = "#d5d9e0"; // supporting text on banners: lighter than muted so it reads at thumbnail size
 const accent = "#dc2f28";
 
 const copy = {
@@ -75,8 +76,8 @@ const lockup = (s) =>
       mark(38 * s),
       h("div", { style: { display: "flex", fontSize: 30 * s, fontWeight: 800, letterSpacing: -1.1 * s, color: fg } }, "codevix", h("span", { style: { color: accent } }, ".")),
     ),
-    h("div", { style: { display: "flex", width: 1, height: 22 * s, background: "rgba(255,255,255,0.2)" } }),
-    h("div", { style: { display: "flex", fontSize: 15 * s, fontWeight: 700, letterSpacing: 2 * s, textTransform: "uppercase", color: muted } }, copy.kicker),
+    h("div", { style: { display: "flex", width: 1, height: 22 * s, background: "rgba(255,255,255,0.35)" } }),
+    h("div", { style: { display: "flex", fontSize: 17 * s, fontWeight: 800, letterSpacing: 1.6 * s, textTransform: "uppercase", color: soft } }, copy.kicker),
   );
 
 const chip = (label, s) =>
@@ -131,7 +132,7 @@ const content = (s, { align = "start", brand = true, meta = true, singleLine = f
     meta &&
       h(
         "div",
-        { style: { display: "flex", alignItems: "center", gap: 28 * s, marginTop: 28 * s, fontSize: 19 * s, fontWeight: 500, color: muted } },
+        { style: { display: "flex", alignItems: "center", gap: 28 * s, marginTop: 28 * s, fontSize: 19 * s, fontWeight: 600, color: soft } },
         h("span", null, copy.promise),
         h(
           "div",
