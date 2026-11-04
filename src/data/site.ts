@@ -26,7 +26,7 @@ export const site = {
   socials: [
     { label: "GitHub", href: "https://github.com/Hshamim" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/shamim-hosen-254697122/" },
-    { label: "X", href: "https://x.com/CodevixHQ1lfa" },
+    { label: "X", href: "https://x.com/Codeshikhofw2o" },
   ],
 } as const;
 
